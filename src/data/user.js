@@ -3,7 +3,7 @@ const INFO = {
 		title: "Reactfolio by Fintan Roche",
 		name: "Fintan Roche",
 		email: "fintan.roche95@gmail.com",
-		logo: "../My Logo.jpg",
+		logo: "../my-logo.jpg",
 	},
 
 	socials: {
