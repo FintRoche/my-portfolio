@@ -1,0 +1,73 @@
+@import "../../../data/styles.css";
+
+.works-body {
+  margin-bottom: 10px;
+}
+
+.works{
+  display: flex;
+  height: 100%;
+}
+
+.work {
+  display: flex;
+  padding-bottom: 40px;
+  width: 400px;
+  flex-direction: column; /* Ensure elements stack vertically */
+}
+
+.work-image {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  outline: 1px solid white;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0px; /* Add space between image and text */
+  margin-right: 10px;
+}
+
+.work-details {
+  display: flex;
+  flex-direction: column; /* Ensure each element stacks vertically */
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.work-logo{
+	margin-right: 10px;
+}
+.work-title {
+	display: flex;
+  font-size: 15px;
+  font-weight: 700;
+  /* align-items: center; */
+  /* justify-content: center; */
+  align-items: center;
+  color: var(--secondary-color);
+  justify-content: flex-start;
+}
+
+.work-subtitle-container {
+	display: flex; /* Use flexbox for horizontal layout */
+	justify-content: space-between; /* Optional: distribute items evenly */
+	margin-top: 5px;
+  }
+
+.work-subtitle {
+  font-size: 12px;
+  color: var(--secondary-color);
+  margin-top: 5px; /* Add margin to separate subtitles */
+}
+
+.work-duration {
+  font-size: 12px;
+  text-align: right;
+  color: var(--tertiary-color);
+  margin-top: 5px; /* Add margin to separate duration from subtitle */
+}
+
+.work-divider {
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  width: 100%;
+  margin-bottom: 10px; /* Add margin to avoid overlap with next text */
+}

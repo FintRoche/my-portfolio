@@ -1,0 +1,120 @@
+.icons-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px; /* Adjust the gap between icons as needed */
+  }
+  
+  .icon-item {
+	display: flex;
+	align-items: center; /* Align items vertically in the center */
+	justify-content: flex-start; /* Align items horizontally to the start */
+	flex: 0 1 calc(10% - 10px); /* Ensure 10 icons per row, accounting for gap */
+	max-width: calc(10% - 10px); /* Ensure max width is 10% of the container width */
+	height: 100%;
+	cursor: pointer;
+	text-align: right; /* Align the content of each icon to the left */
+	
+  }
+
+
+  .icon-item-text {
+	display: flex;
+	align-items: center; /* Align items vertically in the center */
+	justify-content: flex-start; /* Align items horizontally to the start */
+	cursor: pointer;
+	text-align: left; /* Align the content of each icon to the left */
+	background-color: lightgrey;
+
+  }
+
+  .icons{
+	display: relative;
+	height: 20px;
+	justify-content: space-between; 
+	
+	/* flex: 1 1 calc(100%);  */
+  }
+  .icons-text{
+	justify-content: end; 
+  }
+  
+  .icon{
+	border-radius: 50%;
+	background-color: lightgrey;
+	padding: 5px;
+	height: auto;
+  }
+
+  .icon-selected{
+	border-radius: 50%;
+	border-top-right-radius: 0%;
+	border-bottom-right-radius: 0%;
+	padding: 5px;
+	background-color: lightgrey;;
+	height: auto; /* Maintain the aspect ratio */
+  }
+  
+  .icon-name {
+	margin-left: 10px; /* Add space between the image and the text */
+	font-size: 14px; /* Adjust the font size as needed */
+  }
+  
+
+  .icons-container1 {
+	display: flex;
+	flex-wrap: wrap;
+	margin:20px;
+	margin-left: 0px;
+	gap: 10px; /* Adjust the gap between icons as needed */
+  }
+  
+  .icon-container1 {
+	display: flex; /* Use flexbox to align items horizontally */
+	justify-content: space-between;
+	gap: 0px;
+	align-items: center; /* Center-align items vertically */
+	margin-right: 0px; /* Space between icons */
+	cursor: pointer; /* Indicate that the container is interactive */
+	background-color: rgb(239, 241, 246);
+	padding: 5px;
+	border-radius: 50vh;
+	/* box-shadow: 1px 2px 3px 3px #e76767; */
+	box-shadow: 1px 2px 3px 3px rgb(218, 219, 221);;
+  }
+  .icon1 {
+	
+	height: 100%; /* Set the height to 100% of the parent container */
+	display: flex;
+	align-items: center; /* Align items vertically in the center */
+	justify-content: flex-start; /* Align items horizontally to the start */
+	width: auto; /* Maintain the aspect ratio */
+	cursor: pointer;
+	text-align: right; /* Align the content of each icon to the left */
+	
+  }
+  
+  .icon-title1 {
+	margin-left: 10px; /* Add space between the icon and the text */
+	display: flex;
+	align-items: center; /* Align items vertically in the center */
+	justify-content: flex-end; /* Align items horizontally to the start */
+	cursor: pointer;
+	text-align: left; /* Align the content of each icon to the left */
+	height: 100%;
+  }
+
+  .h20{
+	height: 20px;
+  }
+  .h30{
+	height: 30px;
+  }
+.h40{
+	height: 40px;
+  }
+ .h50{
+	height: 50px;
+  }
+  
+
+  

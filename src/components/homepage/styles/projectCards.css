@@ -1,0 +1,68 @@
+.project-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust gap between cards as needed */
+  }
+  
+  .project-card {
+    flex: 1 1 calc(33.333% - 10px); /* Three cards per row */
+    max-width: calc(33.333% - 10px);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    mix-blend-mode: normal;
+  }
+  
+  .project-card.expanded {
+    flex: 1 1 100%; /* Takes up the whole row */
+    max-width: calc(100% - 10px);
+  }
+
+  .project {
+    mix-blend-mode: normal;
+    border-radius: 20px;
+    opacity: 0.8;
+    height: 100%;
+  }
+
+  .project-logo {
+    width: 30px;
+  }
+
+  .project-logo img {
+    width: 100%;
+  }
+
+  .project-title {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    font-size: 16px;
+    padding-top: 15px;
+    margin-bottom: 1em;
+    font-weight: 700;
+  }
+
+  .project-description {
+    color: var(--secondary-color);
+  }
+
+  .project-link {
+    display: flex;
+    align-items: center;
+    color: var(--secondary-color);
+    font-size: 12px;
+    padding-top: 20px;
+  }
+  
+  .project-link-icon {
+    padding-left: 5px;
+    font-size: 13px;
+  }
+  
+  .project-link-text {
+    padding-left: 20px;
+    font-weight: 700;
+  }
+  
