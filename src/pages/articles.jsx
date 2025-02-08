@@ -7,7 +7,6 @@ import Logo from "../components/common/logo";
 import Article from "../components/articles/article";
 
 import INFO from "../data/user";
-import SEO from "../data/seo";
 import myArticles from "../data/articles";
 
 import "./styles/articles.css";
