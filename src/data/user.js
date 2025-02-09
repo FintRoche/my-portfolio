@@ -7,18 +7,14 @@ const INFO = {
 	},
 
 	socials: {
-		twitter: "https://twitter.com/",
-		github: "https://github.com/",
+		github: "https://github.com/FintRoche/my-portfolio",
 		linkedin: "https://www.linkedin.com/in/fintanroche/",
-		instagram: "https://instagram.com/",
-		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://facebook.com/",
 	},
 
 	homepage: {
-		title: "Full-stack web developer.",
+		title: "Welcome To My Page.",
 		description:
-			"Full stack software developer with 5 years of experience specializing in Microsoft technologies. Adept at building secure, scalable, and efficient full-stack solutions using frame works such as Angular, ASP.Net framework and Entity Framework. Along side with Azure, Azure DevOps, Azure Resource Manager (ARM) and CI/CD pipelines to insure seamless deployment. Proficient in many programming languages including JavaScript, C#, SQL and TypeScript, Experience delivering high-quality applications in industries such as Finance, Healthcare, and Medtech.",
+			"Hi im Fintan and I'm a Full stack software developer with 5 years of experience specializing in Microsoft technologies. Adept at building secure, scalable, and efficient full-stack solutions using frame works such as Angular, ASP.Net framework and Entity Framework. Along side with Azure, Azure DevOps, Azure Resource Manager (ARM) and CI/CD pipelines to insure seamless deployment. Proficient in many programming languages including JavaScript, C#, SQL and TypeScript, Experience delivering high-quality applications in industries such as Finance, Healthcare, and Medtech.",
 	},
 
 	about: {

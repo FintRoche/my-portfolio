@@ -7,7 +7,6 @@ import "./styles/works.css";
 
 const Works = () => {
 	return (
-		// <div className="works">
 			<Card
 				icon={faBriefcase}
 				title="Work"
@@ -52,23 +51,9 @@ const Works = () => {
 								</div>
 							</div>
 						</div>
-
-						{/* <div className="work">
-							<img
-								src="./twitter.png"
-								alt="twitter"
-								className="work-image"
-							/>
-							<div className="work-title">Twitter</div>
-							<div className="work-subtitle">
-								Software Engineer
-							</div>
-							<div className="work-duration">2019 - Present</div>
-						</div> */}
 					</div>
 				}
 			/>
-		// </div>
 	);
 };
 

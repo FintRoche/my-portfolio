@@ -13,6 +13,7 @@
     box-sizing: border-box;
     border-radius: 20px;
     mix-blend-mode: normal;
+    outline: 2px solid #f4f4f5;
   }
   
   .project-card.expanded {
@@ -66,3 +67,10 @@
     font-weight: 700;
   }
   
+  @media (max-width: 1024px) {
+    .project-card {
+      flex: 1 1 100%; /* Takes up the whole row */
+      max-width: calc(100% - 10px);
+    }
+    
+  }
