@@ -6,19 +6,20 @@ import INFO from "../../data/user";
 import "./styles/logo.css";
 
 const Logo = (props) => {
-	let { width, link } = props;
+	let { width, link, linktext,logo } = props;
 
 	if (link === undefined) {
 		link = true;
 	}
-
 	const imageElement = (
-		<img src={INFO.main.logo} alt="logo" className="logo" width={width} />
+		<img src={logo ?? INFO.main.logo} alt="logo" className="logo" width={width} />
 	);
+
+	const linkText = ( linktext ?? "/")
 
 	return (
 		<React.Fragment>
-			{link ? <Link to="/">{imageElement}</Link> : imageElement}
+			<Link to={linkText}>{imageElement}</Link>
 		</React.Fragment>
 	);
 };

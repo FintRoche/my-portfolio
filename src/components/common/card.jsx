@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./styles/card.css";
 
 const Card = (props) => {
-	const { icon, title, body } = props;
+	const { icon, title, body, link, linkText='more....' } = props;
 	return (
 		<div className="card">
 			<div className="card-container">
@@ -17,8 +17,12 @@ const Card = (props) => {
 				<div className="card-body">
 					<div className="card-text">{body}</div>
 				</div>
+				{link && <div className="card-footer">
+					<a href={link}>{linkText}</a>
+				</div>}
+					
+				</div>
 			</div>
-		</div>
 	);
 };
 

@@ -7,7 +7,6 @@ import "./styles/works.css";
 
 const Education = () => {
 	return (
-		// <div className="works">
 			<Card
 				icon={faBook}
 				title="Education"
@@ -30,9 +29,6 @@ const Education = () => {
 									<div className="work-subtitle">
 										BS Physics and Applied Physics
 									</div>
-									{/* <div className="work-duration">
-										2019 - 2020
-									</div> */}
 								</div>
 							</div>
 
@@ -52,29 +48,12 @@ const Education = () => {
 									<div className="work-subtitle">
 										Postgraduate Diploma Software Design and Development
 									</div>
-									{/* <div className="work-duration">
-										2019 - 2020
-									</div> */}
 								</div>
 							</div>
 						</div>
-
-						{/* <div className="work">
-							<img
-								src="./twitter.png"
-								alt="twitter"
-								className="work-image"
-							/>
-							<div className="work-title">Twitter</div>
-							<div className="work-subtitle">
-								Software Engineer
-							</div>
-							<div className="work-duration">2019 - Present</div>
-						</div> */}
 					</div>
 				}
 			/>
-		// </div>
 	);
 };
 

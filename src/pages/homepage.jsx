@@ -126,22 +126,16 @@ const Homepage = () => {
 									icon={faMailBulk}
 									className="homepage-social-icon"
 								/>
-								<FontAwesomeIcon icon="fa-solid fa-computer" />
 							</a>
 							<a
 								href={INFO.socials.linkedin}
 								target="_blank"
 								rel="noreferrer"
 							>
-								<div className="social-icon">
 									<FontAwesomeIcon
 										icon={faLinkedin}
-										className="social-icon"
+										className="homepage-social-icon"
 									/>
-								</div>
-								<div className="social-text">
-									Follow on LinkedIn
-								</div>
 							</a>
 						</div>
 						<div className="work-container">

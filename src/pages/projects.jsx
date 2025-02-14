@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import { Helmet } from "react-helmet";
-
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
-import INFO from "../data/user";
-
+import Card from "../components/common/card";
 import "./styles/projects.css";
+import myProjects from "../data/projects";
+import { faTableCells } from "@fortawesome/free-solid-svg-icons";
+
 
 const Projects = () => {
 	useEffect(() => {
@@ -15,10 +15,6 @@ const Projects = () => {
 
 	return (
 		<React.Fragment>
-			<Helmet>
-				<title>{`Projects | ${INFO.main.title}`}</title>
-			</Helmet>
-
 			<div className="page-content">
 				<NavBar active="projects" />
 				<div className="content-wrapper">
@@ -28,9 +24,18 @@ const Projects = () => {
 						</div>
 					</div>
 					<div className="projects-container">
-						<div className="title projects-title">
-						</div>
-						<div className="subtitle projects-subtitle">
+						<div className="title projects-title">Projects.</div>
+
+						<div className="project-cards">
+							{myProjects.map((project, index) => (
+								<Card
+									icon={faTableCells}
+									title={project().title}
+									body={project().description}
+									link={"/projects/" + index + 1}
+									linkTilte="open..."
+								></Card>
+							))}
 						</div>
 					</div>
 					<div className="page-footer">
