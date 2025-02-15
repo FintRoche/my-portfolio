@@ -11,6 +11,7 @@ const Sudoku = () => {
 
 	const initialBoard = Array(9).fill(Array(9).fill(""));
 	const [board, setBoard] = useState(initialBoard);
+	const [error, setError] = useState("");
 
 	const handleSubmit = async () => {
 		try {
@@ -18,6 +19,8 @@ const Sudoku = () => {
 			setBoard(response.data);
 		} catch (error) {
 			console.error("There was an error submitting the board:", error);
+
+			setError("No solution found for the given Sudoku puzzle.");
 		}
 	};
 
@@ -32,6 +35,7 @@ const Sudoku = () => {
 	const handleClear = () => {
 		const initialBoard = Array(9).fill(Array(9).fill(""));
 		setBoard(initialBoard);
+		setError("");
 	};
 
 	return (
@@ -54,14 +58,16 @@ const Sudoku = () => {
 					))}
 				</table>
 			</div>
-      <div className="sudoku-button-container">
+		<div className="error-message">
+			{error}</div>
+      	<div className="sudoku-button-container">
 			<button onClick={handleClear} className="button sudoku-button">
 				Clear
 			</button>
 			<button onClick={handleSubmit} className="button sudoku-button">
 				Submit Board
 			</button>
-      </div>
+      	</div>
 		</div>
 	);
 };

@@ -7,7 +7,7 @@ import SkillIcons from "./skillsIcons"
 
 
 const ProjectCard = ({ project }) => {
-	const { logo, title, description, tasks } = project;
+	const { logo, title, description, tasks, skills } = project;
 	const [isExpanded, setIsExpanded] = useState(false);
 
 	const handleCardClick = () => {
@@ -23,7 +23,7 @@ const ProjectCard = ({ project }) => {
 				<img src={logo} alt="logo" />
 			</div>
 			<div className="project-title">{title}</div>
-      {isExpanded && (<SkillIcons height="20"/> )}
+      {isExpanded && (<SkillIcons skillIds={ skills } height="20"/> )}
 			<div className="project-description">{description}</div>
 			{isExpanded && (
         <div className="project-task-title">Tasks

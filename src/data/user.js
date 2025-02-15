@@ -19,8 +19,7 @@ const INFO = {
 
 	about: {
 		title1: "From Physics to Software Development.",
-		description1:
-			`My journey into software development began with a deep curiosity about
+		description1: `My journey into software development began with a deep curiosity about
 		how the world works. While studying
 		Physics, I honed my ability to break
 			down complex problems into
@@ -56,18 +55,18 @@ const INFO = {
 			challenges, breaking them down
 			logically, and delivering efficient
 			solutions.`,
-		image1:"quad.jpg",
-		title2:"Life in British Columbia.",
-		description2:`Originally from Ireland, I moved to
+		image1: "quad.jpg",
+		title2: "Life in British Columbia.",
+		description2: `Originally from Ireland, I moved to
 					British Columbia three years ago, drawn
 					by both career opportunities and my love
 					for the outdoors. I currently live in
 					Squamish, where I get to balance my work
 					in tech with an adventurous lifestyle in
 					the mountains.`,
-		image2:"squamish.jpg",
-		title3:"Beyond the Screen: My Hobbies",
-		description3:`When I’m not writing code, you’ll likely
+		image2: "squamish.jpg",
+		title3: "Beyond the Screen: My Hobbies",
+		description3: `When I’m not writing code, you’ll likely
 										find me out on the trails or in the
 										backcountry. I’m an avid mountain biker
 										and ski tourer, always looking for new
@@ -76,7 +75,7 @@ const INFO = {
 										coding—offering both mental clarity and
 										a physical challenge that keeps me
 										motivated.`,
-		images3:[
+		images3: [
 			"touring1.jpg",
 			"biking1.jpg",
 			"touring3.jpg",
@@ -84,9 +83,8 @@ const INFO = {
 			"surfing.jpg",
 			"touring2.jpg",
 		],
-		title4:"Let’s Connect!",
-		description4:`Whether you want to discuss software, outdoor adventures, or anything in between, feel free to reach out. I’m always happy to chat, collaborate, and explore new ideas!`
-
+		title4: "Let’s Connect!",
+		description4: `Whether you want to discuss software, outdoor adventures, or anything in between, feel free to reach out. I’m always happy to chat, collaborate, and explore new ideas!`,
 	},
 
 	articles: {
@@ -128,6 +126,7 @@ const INFO = {
 				</li>
 			</ul>`,
 			},
+			skills: [1, 2, 3, 4,7,10,11,16,17,19,20]
 		},
 
 		{
@@ -157,6 +156,7 @@ const INFO = {
 				</li>
 			</ul>`,
 			},
+			skills: [1, 2, 3, 4,7,10,11,16,17,19,20]
 		},
 
 		{
@@ -190,6 +190,7 @@ PowerShell ISE.
 				</li>
 			</ul>`,
 			},
+			skills: [1, 2, 3, 4,7,10,11,16,17,19,20]
 		},
 
 		{
@@ -221,6 +222,7 @@ based on predefined criteria.
 				</li>
 			</ul>`,
 			},
+			skills: [1]
 		},
 
 		{
@@ -247,14 +249,15 @@ effort and improving operational efficiency.
 				</li>
 			</ul>`,
 			},
+			skills: [1, 2, 3, 4,7,10,11,16,17,19,20]
 		},
 	],
 	techonolgies: [
-		// {
-		// 	id: 1,
-		// 	title: ".NET / .NET Core",
-		// 	icon: "net.png",
-		// },
+		{
+			id: 1,
+			title: ".NET / .NET Core",
+			icon: "net.png",
+		},
 		{
 			id: 2,
 			title: "Angular",

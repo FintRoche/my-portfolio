@@ -15,28 +15,19 @@
 }
 
 .project-cards {
-	display: flex;
-	flex: 1 1 calc(33% - 10px);
-	padding: 10px;
-	height: 100%;
-	margin: 10px;
-	gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust 200px to your desired card width */
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
 }
-.t {
-	display: flex;
-	flex: 1 1 calc(33% - 10px);
-	padding: 10px;
-	height: 100%;
-	margin: 10px;
-	gap: 10px;
-}
-
 
 .projects-container {
-	height: 100%;
-	margin: 0;
-	padding-top: 120px;
-}
+    height: 100%;
+    margin: 0;
+    padding-top: 120px;}
+
 
 
 
